@@ -9,16 +9,13 @@
 // - Bachiller para mayores de 16 años con la ESO
 // - FP para mayores de 16 años con la ESO
 // ------------------------------------------------------------------------------
-// Función que devuelve opciones académicas
-function opcionesAcademicas(añoNacimiento, tieneEso) {
-  // Calculamos la edad, en funcion de si tiene eso o no, devolvemos las alternativas disponibles
+
 
   // Por ejemplo,
   // Si tiene 16 años y tiene ESO, devolvemos Bachiller y FP
   // Si tiene 14 años y no tiene ESO, devolvemos ESO
   // Si tiene 10 años, devolvemos Primaria
   // Si tiene 5 años, devolvemos Infantil
-}
 
 // Primera iteración de la función que devuelve opciones académicas
 // const año = prompt("Introduce tu año de nacimiento")
@@ -30,14 +27,49 @@ function opcionesAcademicas(añoNacimiento, tieneEso) {
 // const esoBoolean = tieneEso === "si" || tieneEso === "sí" ? true : false // únicamente convertiremos si a true, el resto a false
 // opcionesAcademicas(año, tieneEso)
 
-function opcionesAcademicas2(añoNacimiento, tieneEso) {
-  console.log(typeof añoNacimiento, typeof tieneEso)
-  console.log(`Los datos introducidos son; añoNacimiento: ${añoNacimiento}, tieneEso: ${tieneEso}`)
+// Función que devuelve opciones académicas
+// Calculamos la edad, en funcion de si tiene eso o no, devolvemos las alternativas disponibles
+function opcionesAcademicas(añoNacimiento, tieneEso) {
+  console.log(`Los parámetros son; añoDeNacimiento:${añoNacimiento} y eso:${tieneEso}`)
 
-  if (tieneEso) {
-    console.log("Bachiller y FP")
-  } else {
-    console.log("ESO")
+  // Validadores para saber si lo que estamos ejecutando funciona
+  if (typeof tieneEso !== 'boolean') { // Valida si tieneEso es un booleano
+    return "Por favor, introduce un valor de ESO válido"
+  }
+
+  if (Number(añoNacimiento) === NaN) { // Valida si añoDeNacimiento es un número
+    return "Por favor, introduce un año válido"
+  }
+
+  const edad = 2024 - añoNacimiento // esto funcionaría a pesar de ser de tipo string
+
+  if (edad <= 3) {
+    return "Infantil"
+  }
+
+  if (edad <= 6) {
+    return "Primaria"
+  }
+
+  if (edad <= 12) {
+    return "ESO"
+  }
+
+  if (edad >= 16) {
+    if (tieneEso) { // se cumple si es true, no se cumple si es false. Equivalente a if (eso === true)
+      return "Bachillerato o FP"
+    } else {
+      return "ESO"
+    }
   }
 }
 // opcionesAcademicas2(año, tieneEso)
+
+
+const usuarioAñoNaciento = prompt("¿En qué año naciste?");
+const usuarioTieneEso = confirm("¿Tienes la ESO?");
+
+// const esoBooleanPrompt = prompt("¿Tienes la ESO?");
+// const esoBoolean = esoBooleanPrompt === "si" || esoBooleanPrompt === "sí" ? true : false;
+// Se debe llamar a la función cuyo nombre es "añoDeNacimiento"
+console.log(opcionesAcademicas(usuarioAñoNaciento, usuarioTieneEso));

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulario de Reseña de Películas</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="base.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <h1>Web de Reseñas de Películas</h1>
+    <h2>Películas</h2>
+    <div id="movieList">
+        <ul id="movies"></ul>
+    </div>
+    <h2>Agregar una nueva película</h2>
+    <div id="addMovie">
+        <form id="reviewForm" onsubmit="funcionFormulario(event)">
+            <label for="movieName">Nombre de la película:</label><br>
+            <input type="text" id="movieName" name="movieName"><br>
+            <label for="review">Reseña:</label><br>
+            <textarea id="review" name="review"></textarea><br>
+            <label for="rating">Calificación (1-5):</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="5"><br>
+            <input type="submit" value="Agregar película">
+        </form>
+        <p id="errorMessage" class="error"></p>
+    </div>
+</body>
+
+</html>

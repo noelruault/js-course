@@ -213,6 +213,8 @@ if (
 
 ```javascript
 // Falsy values: null, undefined, false, NaN, 0, -0, 0n, "", '', ``
+
+// Cualquier cadena con contenido, se evaluará como verdadera, por lo tanto podemos utilizar la cadena "falso" para indicar que el valor es falso como segunda opción.
 console.log("verdadero" || "falso");
 console.log(1 || "falso");
 console.log(true || "falso");
@@ -225,6 +227,16 @@ console.log(undefined || "falso");
 ```
 
 ## typeCoertion.js
+
+JavaScript realiza conversiones automáticas entre tipos de datos en varias situaciones. Algunos de los casos más comunes son:
+
+1. **Operaciones con strings y números**: En operaciones que involucran strings y números, como concatenación de strings con el operador `+`, JavaScript convierte automáticamente los números a strings para realizar la concatenación.
+
+2. **Coerción de tipos en operaciones aritméticas**: Cuando se realizan operaciones aritméticas con valores de diferentes tipos, JavaScript intentará convertir los operandos a un tipo común antes de realizar la operación. Por ejemplo, al sumar un número y un string, JavaScript intentará convertir el string en número y luego realizar la suma.
+
+3. **Comparaciones con operadores de comparación (== y ===)**: En las comparaciones con los operadores `==` (igualdad) y `===` (igualdad estricta), JavaScript realiza conversiones automáticas de tipos si los operandos son de tipos diferentes. La diferencia entre `==` y `===` radica en que `==` realiza una conversión de tipos (coerción) antes de realizar la comparación, mientras que `===` no realiza conversión de tipos y compara los valores y tipos exactos.
+
+4. **Condiciones en declaraciones `if` y bucles**: Al evaluar condiciones en declaraciones `if`, `else if`, `while`, `do-while`, `for`, etc., JavaScript realiza conversiones automáticas de tipos si los operandos son de tipos diferentes.
 
 ```javascript
 // tipos? number, string, boolean, object, undefined, bigint, symbol.

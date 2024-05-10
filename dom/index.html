@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title's page</title>
+
+    <style>
+        body {
+            background: #282828;
+            color: wheat;
+        }
+    </style>
+    <!-- # Importar Javascript # -->
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+    <h1>¡Hola Mundo!</h1>
+
+    <form>
+        <label for="mail">E-mail:</label>
+        <input required type="email" id="mail" name="mail" />
+        <label for="nombre">Name:</label>
+        <input required pattern="[A-Za-zäëïöüÄËÏÖÜáéíóúÁÉÍÓÚ]+" type="text" id="nombre" name="nombre"/>
+        <button>Submit</button>
+    </form>
+
+    <div class="ball"></div>
+    <div class="ball"></div>
+
+</body>
+
+</html>

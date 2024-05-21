@@ -4,7 +4,7 @@ import globals from "globals"
 export default [
 	js.configs.recommended, // https://eslint.org/docs/latest/use/configure/configuration-files#using-predefined-configurations
 	{
-		ignores:         ["pkg/**/*", ".wrangler/**/*", "node_modules/**/*", "**/dist/**/*"],
+		ignores:         ["node_modules/**/*", "**/dist/**/*"],
 		languageOptions: {
 			ecmaVersion:   "latest",
 			sourceType:    "module",

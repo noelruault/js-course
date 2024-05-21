@@ -9,7 +9,6 @@
         },
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
-    "compile-hero.disable-compile-files-on-did-save-code": false,
     "webvalidator.validateOnSave": true,
     "webvalidator.validationNotification": false,
     "eslint.experimental.useFlatConfig": true

@@ -1,5 +1,5 @@
 {
-  "name": "prueba",
+  "name": "proyectoABC",
   "version": "0.0.1",
   "license": "UNLICENSED",
   "private": true,
@@ -14,6 +14,7 @@
     "dev": "bun x --bun vite --port 80 --strictPort"
   },
   "devDependencies": {
-    "eslint": "latest"
+    "eslint": "latest",
+    "@eslint/js": "latest"
   }
 }

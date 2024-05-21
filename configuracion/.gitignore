@@ -10,10 +10,8 @@ __*
 /**/._*
 
 ## Visual Studio Code ##
-!.vscode/settings.json
 !.vscode/extensions.json
-!/**/.vscode/settings.json
-!/**/.vscode/extensions.json
+!.vscode/settings.json
 
 ## Others ##
 /dist

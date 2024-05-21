@@ -1,0 +1,19 @@
+{
+  "name": "prueba",
+  "version": "0.0.1",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "scripts": {
+    "dev": "bun x --bun vite --port 80 --strictPort"
+  },
+  "devDependencies": {
+    "eslint": "latest"
+  }
+}

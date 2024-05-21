@@ -1,0 +1,16 @@
+section {
+    border: 1px solid black;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.square {
+    display: block;
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}

@@ -17,7 +17,6 @@ if (typeof variableGlobal === "string") {
 }
 // console.log(variableLocal); // Error: variableLocal is not defined
 
-
 function test() {
     const listaNumeros = [1, 2, 3, 4, 5]
     for (let i in listaNumeros) {
@@ -62,6 +61,7 @@ while (index < arr.length) { // condición
 
 // 3. Utilizando forEach
 // arr.forEach((elemento) => console.log(`Elemento: ${elemento}`));
+
 
 // 4. Utilizando for in
 for (let i in arr) {
@@ -124,8 +124,8 @@ let removeElement = (array, posicion) => {
 let arrayInicial = [1, 2, 3, "hola", 4];
 let posicion = 3;
 let resultado = removeElement(arrayInicial, posicion);
-console.log(arrayInicial)
-console.log("Elementos después de la eliminación: " + resultado);
+// console.log(arrayInicial)
+// console.log("Elementos después de la eliminación: " + resultado);
 
 // Gracias a los métodos de los arrays, podemos hacer lo mismo de una forma más sencilla:
 

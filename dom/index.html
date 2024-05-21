@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
             color: wheat;
         }
     </style>
-    <!-- # Importar Javascript # -->
+
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 
@@ -25,14 +25,17 @@
 
     <form>
         <label for="mail">E-mail:</label>
-        <input required type="email" id="mail" name="mail" />
+        <input required type="email" id="mail" name="mail" >
         <label for="nombre">Name:</label>
-        <input required pattern="[A-Za-zäëïöüÄËÏÖÜáéíóúÁÉÍÓÚ]+" type="text" id="nombre" name="nombre"/>
-        <button>Submit</button>
+        <input minlength="2" required pattern="[A-Za-zäëïöüÄËÏÖÜáéíóúÁÉÍÓÚ]+" type="text" id="nombre" name="nombre">
+        <button id="submitButton">Submit</button>
     </form>
 
     <div class="ball"></div>
     <div class="ball"></div>
+    <div id="square"></div>
+    <br>
+    <div id="player"></div>
 
 </body>
 

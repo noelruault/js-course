@@ -14,7 +14,7 @@
     "dev": "bun x --bun vite --port 80 --strictPort"
   },
   "devDependencies": {
-    "eslint": "latest",
-    "@eslint/js": "latest"
+    "@eslint/js": "latest",
+    "@stylistic/eslint-plugin-js": "latest"
   }
 }
